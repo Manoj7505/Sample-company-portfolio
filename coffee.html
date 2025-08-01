@@ -1,0 +1,237 @@
+<html>
+
+<head>
+    <title>coffee</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-image: url("comic.jpg");
+        background-repeat: repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        margin: 15px;
+        font-family: cursive;
+        border: 0.1px;
+        color: white;
+        font-size: 20px;
+    }
+
+
+    nav {
+        display: flex;
+        column-gap: 20px;
+        cursor: pointer;
+    }
+
+    nav p {
+        margin-right: 50px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 50px;
+        transition: filter 0.3;
+
+    }
+
+    .content {
+        max-width: 50%;
+    }
+
+    .content h1 {
+        font-size: 40px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-left: 40px;
+        color: white;
+    }
+
+    .content p {
+        margin: 40px 0;
+        margin-left: 75px;
+        font-size: 20px;
+        color: white;
+        text-align: bold;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    pre {
+        text-align: center;
+        font-size: 40px;
+        font-family: cursive;
+        color: white;
+    }
+
+    .content button {
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 10px;
+        margin-left: 270px;
+        background-color: black;
+        color: white;
+        text-align: bold;
+    }
+
+    .bts {
+        font-size: 20px;
+    }
+
+    .rightcontent {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 30px;
+        border-radius: 10px;
+        display: none;
+        border: solid white 3px;
+        z-index: 1000;
+    }
+
+    .rightcontent h3 {
+        text-align: center;
+        font-size: 40px;
+        font-family: cursive;
+        color: white;
+    }
+
+    .rightcontent input {
+        padding: 10px;
+        margin: 10px;
+        margin-top: 20px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .rightcontent button {
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+
+    }
+
+    .rightcontent p {
+        margin-top: 20px;
+        text-align: center;
+        font-size: large;
+        color: white;
+    }
+
+    .icons {
+        text-align: center;
+        font-size: 20px;
+
+    }
+
+    .icons i {
+        font-size: 20px;
+        margin-top: 20px;
+        cursor: pointer;
+        font-size: 30px;
+        width: 80px;
+        color: white;
+
+    }
+</style>
+<style>
+    #bgimage {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-image: url("stand.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: none;
+        z-index: 500;
+    }
+</style>
+
+<body>
+    <header>
+        <h1>PraRoz Academy</h1>
+        <nav>
+            <a href="coffee.html" style="text-decoration: none;color:white;">
+              <p>Home</p>
+            </a>
+            <a href="about.html" style="text-decoration: none;color:white">
+                <p>About</p>
+            </a>
+            <a href="careers.html" style="text-decoration: none;color: white;">
+                <p>Our Courses</p>
+            </a>
+            <a href="service.html" style="text-decoration: none;color: white;">
+                <p>Service</p>
+            </a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="content">
+            <h1>Design & Development</h1>
+            <h1>Course</h1>
+            <p>We are Teach You to Designing and Development, We Teach the <br><br>Frontend , Backend & FullStack.
+            <pre>Welcome to All</pre>
+            </p>
+            <a href="login.html">
+                <button onclick="" class="bts">Check Here</button>
+            </a>
+        </div>
+        <div id="loginbox" class="rightcontent">
+            <h3>login page</h3>
+            <input type="email" placeholder="Enter email here" id="email">
+            <input type="password" placeholder="enter password here" id="password">
+            <button onclick="validate()">Login</button>
+            <p>Don't have an Account?</p>
+            <p><a href="sign.html" style="color:white">SignUp here.</a></p>
+            <p>Log in with</p>
+            <div class="icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-telegram"></i>
+                <i class="fab fa-whatsapp"></i>
+            </div>
+        </div>
+        <div id="bgimage"></div>
+    </div>
+    <!--<script> 
+        // function showlogin() {
+        //     document.getElementById("loginbox").style.display = "block";
+        // }
+        // function showimage() {
+        //     document.getElementById("bgimage").style.display = "block";
+        // }
+        function validate(){
+            const email=document.getElementById("email").value.trim();
+            const password=document.getElementById("password").value.trim();
+            if(email===""){
+                alert("Please fill");
+            }
+            else if(password===""){
+                alert("Please fill");
+            }
+            else{
+                window.location.href="login.html";
+            }
+        }
+
+     </script>*/-->
+</body>
+
+</html>

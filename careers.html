@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   
+    <title>Our Courses</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-image: url("indu.jpg");
+            background-repeat: repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 40px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo img {
+            width: 120px;
+
+        }
+
+        .logo h1 {
+            font-family: cursive;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            position: relative;
+        }
+
+
+        .search-icon {
+            font-size: 18px;
+        }
+
+
+        .hero {
+            text-align: center;
+            
+            color: black;
+            padding: 60px 40px 40px;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            font-weight: bold;
+            font-family: cursive;
+        }
+
+        .breadcrumb {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+        }
+
+        .btn-green {
+            background-color: #00c272;
+            border: none;
+            padding: 8px 16px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        /* Course Section */
+        .courses {
+            display: flex;
+            gap: 100px;
+            justify-content: center;
+            padding: 40px;
+            flex-wrap: wrap;
+            cursor: pointer;
+        }
+
+        .course-card {
+            background-color: white;
+            width: 300px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .course-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .course-info {
+            padding: 20px;
+        }
+
+        .course-info h3 {
+            font-size: 25px;
+            margin-bottom: 10px;
+            font-family: cursive;
+        }
+
+        .course-info p {
+            font-size: 14px;
+            line-height: 1.6;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+
+        .do {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>PraRoz Academy</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="coffee.html" style="text-decoration: none;color: black;">Home</a></li>
+                <li><a href="about.html" style="text-decoration: none;color: black;">About</a></li>
+                <li><a href="careers.html" style="text-decoration: none;color:black;"class="active">Our Courses</a></li>
+                <li><a href="service.html" style="text-decoration: none;color: black;">Service</a></li>
+                <li><a href="#"><span class="search-icon">&#128269;</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Our Courses</h1>
+        <div class="breadcrumb">
+            <span>Home &gt; </span>
+            <button class="btn-green">Courses</button>
+        </div>
+    </section>
+
+    <section class="courses">
+        <div class="course-card">
+            <img src="lap.jpg" alt="C Language" />
+            <div class="course-info">
+                <h3>C Language</h3>
+                <p>C is a general-purpose programming language that is extremely popular, simple, and flexible to use.
+                    We will cover all the concepts that will help you understand and build logic.</p>
+            </div>
+        </div>
+
+        <div class="course-card">
+            <img src="man.jpg" alt="C++ Course" />
+            <div class="course-info">
+                <h3>C++ Object Oriented Programming</h3>
+                <p>Coding Career is a leading IT Training provider. This course provides the full gamut of training
+                    methodologies and real-time learning experiences.</p>
+            </div>
+        </div>
+
+        <div class="course-card">
+            <img src="E:\visual code\ox.jpg" alt="Data Structures" />
+            <div class="course-info">
+                <h3>Data Structure and Algorithm</h3>
+                <p>Coding Career will provide you in-depth understanding of the concept with hands-on experience. We
+                    will teach you all data structures with real-world examples.</p>
+            </div>
+        </div>
+    </section>
+    <div class="do">
+        <h2>*************</h2>
+    </div>
+
+    <script>
+        console.log("Page loaded - Ready for interaction.");
+
+    </script>
+</body>
+
+</html>

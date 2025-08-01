@@ -1,0 +1,177 @@
+<html>
+
+<head>
+    <title>login page</title>
+    <style>
+        body {
+            background-image: url("design.jpg");
+            background-repeat: repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            margin: 15px;
+            font-family: cursive;
+            border: 0.1px;
+            color: white;
+            font-size: 20px;
+        }
+
+
+        nav {
+            display: flex;
+            column-gap: 20px;
+            cursor: pointer;
+        }
+
+        nav p {
+            margin-right: 50px;
+        }
+
+
+        .Academy {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .Academy h1 {
+            font-size: 50px;
+            font-family: cursive;
+        }
+
+        .Academy p {
+            margin-top:100px;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .Course {
+            text-align: center;
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            padding: 40px;
+            margin-top: 180px;
+            margin-bottom: 100px;
+        }
+
+        .cou {
+            background-color: white;
+            width: 300px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .cou:hover {
+            transform: translateY(-5px);
+        }
+
+        .cou img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            size: cover;
+            position: center;
+        }
+
+        .info {
+            padding: 20px;
+            background-color: aqua;
+            height: 350px;
+        }
+
+        .info h3 {
+            margin-bottom: 10px;
+            font-family: cursive;
+            font-size: 30px;
+            font-weight: bolder;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+
+        .info p {
+            font-size: 14px;
+            line-height: 1.6;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 15px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .Best {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .Best h1 {
+            font-size: 40px;
+            font-family: cursive;
+            margin-bottom: 70px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>PraRoz Academy</h1>
+        <nav>
+            <a href="coffee.html" style="text-decoration: none;color:black;">
+                <p>Home</p>
+            </a>
+            <a href="about.html" style="text-decoration: none;color: black;">
+                <p>About</p>
+            </a>
+            <a href="careers.html" style="text-decoration: none;color: black;">
+                <p>Our Courses</p>
+            </a>
+            <a href="service.html" style="text-decoration: none;color: black;">
+                <p>Service</p>
+            </a>
+        </nav>
+    </header>
+    <div class="Academy">
+        <h1>Welcome to PraRoz Academy</h1>
+        <p>You’ve successfully logged in! Here you’ll find all our courses, resources, and updates related to design and
+            development.</p>
+    </div>
+    <div class="Course">
+        <div class="cou">
+            <img src="front.jpg" alt="Frontend">
+            <div class="info">
+                <h2>Frontend</h2>
+                <h4>HTML, CSS, JavaScript, React, Angular</h4>
+                <p>The frontend of a web application refers to the components of the application that the user interacts with directly. As the user side of the application, the frontend contains application aspects such as the navigation menu, images and graphics, tables, buttons, and even text colors.</p>
+            </div>
+        </div>
+        <div class="cou">
+            <img src="backend.jpg" alt="Backend">
+            <div class="info">
+                <h2>Backend</h2>
+                <h4>C++, Java, Python</h4>
+                <p>n software development, frontend refers to the presentation layer that users interact with, while backend involves the data management and processing behind the scenes, and full-stack development refers to mastering both.</p>
+            </div>
+        </div>
+        <div class="cou">
+            <img src="Design.avif" alt="Design">
+            <div class="info">
+                <h2>Design</h2>
+                <h4>Interior Design, SketchUp, Architectural Design</h4>
+                <p>Programming languages are typically created by designing a form of representation of a computer program, and writing an implementation for the developed concept,[1] usually an interpreter or compiler. </p>
+            </div>
+        </div>
+    </div>
+    <div class="Best">
+        <h1>What you want to learn, Start to Improve Your Skill</h1>
+        <h1>All the Best for All.</h1>
+    </div>
+</body>
+
+</html>
